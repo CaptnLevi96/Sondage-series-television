@@ -1,0 +1,199 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("100-Greatest-TV-Shows-V1-2.webp");
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); 
+    z-index: -1;
+}
+.container {
+    background: repeating-linear-gradient(
+  45deg,
+  #ffa02d,
+  #ffa02d 10px,
+  #f68e0f 10px,
+  #f68e0f 20px
+);
+    width: 40rem;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0; 
+    border: black 2px solid;
+    margin: auto;
+    align-content: center;
+    margin-top: 50px;
+
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    background-color: #fcb966;
+    border-radius: 20px 20px 0 0;
+    letter-spacing: 10px;
+    color: rgb(134, 76, 0);
+    width: 100%; 
+    margin: 0; 
+    padding: 20px 0; 
+}
+
+.paragraph {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    margin: 0; 
+}
+
+.paragraph2 {
+    padding: 0 5px;
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    color: fcb966;
+    width: 100%;
+    margin-bottom: 20px; 
+    max-width: 40%; 
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        #fcb966 50%
+    );
+}
+
+button {
+    font-size: 2rem;
+    padding: 1rem 2rem; 
+    border: none;
+    border-radius: 10px;
+    background-color: #fcb966;
+    color: rgb(134, 76, 0);
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    box-shadow: 5px 7px #888888;
+
+}
+
+img {
+    height: 10rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer{
+
+    max-width: 8%; 
+    background: 
+        #fcb966 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: 60rem;
+    font-size: 20px;
+
+}
+
+button.quiz-started {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    background-color: #b2670c;
+    color: white;
+}
+
+.question {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    color: #472a07;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.options
+{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.0rem;
+    color: #000000;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.message-de-fin {
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+    color: #fce655;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+.question-image {
+    width: 550px;
+    height: auto;
+    float: right;
+    margin-bottom: 100px;
+}
+
+p{
+    font-family: 'Jost', sans-serif;
+    font-size: larger;
+}
+
+
+.hollywood{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.hollywood:hover{
+    box-shadow: 5px 7px #f74200;
+    transition: all 0.3s ease;
+}
+
+.streaming{
+    position: absolute;
+    top: 200px;
+    left: 1500px;
+    font-size: 18px;
+    border-radius: 20px;
+    float: left;
+}
+
+.streaming:hover{
+    box-shadow: 5px 7px #3546fe;
+    transition: all 0.3s ease;
+}
